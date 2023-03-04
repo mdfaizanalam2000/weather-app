@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap');
+
+* {
+    font-family: 'Baloo 2', cursive;
+}
+
+html {
+    font-size: 90%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.fa-snowflake {
+    color: rgb(71, 71, 201);
+    animation: rot 2s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left p {
+    font-size: 2rem;
+}
+
+.header-left h1 {
+    font-size: 3rem;
+}
+
+.header-left span {
+    color: rgb(71, 71, 201);
+}
+
+.header-left button {
+    background-color: rgb(71, 71, 201);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: rgb(71, 71, 201);
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+    line-height: 3rem;
+    color: white;
+    margin-top: auto;
+}
+
+.aboutme h1 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.aboutme p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.output {
+    width: 50%;
+    margin: auto;
+    min-height: 15rem;
+    background-color: grey;
+    border-radius: 5px;
+}
+
+.top-layer {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(71, 71, 201);
+}
+
+.top-layer p {
+    color: white;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.data-layer {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+}
+
+.data-layer #city {
+    color: white;
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.temp-layer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 30rem;
+    outline: none;
+}
+
+form button {
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(71, 71, 201);
+    padding: 5px 10px;
+    font-size: 1rem;
+    margin: 1rem auto;
+}
+
+form button:hover {
+    background-color: gray;
+}
+
+@media only screen and (max-width: 800px) {
+    footer {
+        line-height: 2rem;
+        font-size: 10px;
+    }
+
+    .header-left button {
+        margin-bottom: 1rem;
+    }
+
+    form input {
+        width: auto;
+    }
+
+    .output {
+        width: auto;
+    }
+}
